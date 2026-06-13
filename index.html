@@ -1,0 +1,403 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nurul Fatin Syazwana e-Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#121212;
+    color:#f5f5f5;
+}
+
+header{
+    background:linear-gradient(135deg,#2b1d14,#5a3b2e);
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#ddd;
+}
+
+nav{
+    background:#1a1a1a;
+    position:sticky;
+    top:0;
+    z-index:100;
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #5a3b2e;
+}
+
+nav a{
+    color:#d4a373;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:60px 0;
+}
+
+.section-title{
+    font-size:2rem;
+    color:#d4a373;
+    margin-bottom:25px;
+    border-left:5px solid #d4a373;
+    padding-left:15px;
+}
+
+.card{
+    background:#1e1e1e;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:25px;
+    border:1px solid #333;
+}
+
+.card h3{
+    color:#d4a373;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#5a3b2e;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.btn:hover{
+    background:#d4a373;
+    color:black;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    margin-top:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    border:2px solid #5a3b2e;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#5a3b2e;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#1a1a1a;
+    color:#999;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>EcoEarn </h1>
+    <p>Mobile Application Development Portfolio</p>
+</header>
+
+<nav>
+    <a href="#profile">Profile</a>
+    <a href="#labs">Labs</a>
+    <a href="#project1">Project 1</a>
+    <a href="#project2">Project 2</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#skills">Skills</a>
+</nav>
+
+<div class="container">
+
+<!-- PROFILE -->
+<section id="profile">
+    <h2 class="section-title">Student Profile</h2>
+
+    <div class="card">
+        <p><strong>Nurul Fatin Syazwana binti Mohd Sepri</strong></p>
+        <p><strong>A212236</strong> XXXXX</p>
+        <p><strong>Mobile App Development</strong></p>
+        <p><strong>Dr. Nazatul Aini</strong></p>
+
+        <br>
+
+        <h3>Introduction</h3>
+        <p>
+            This e-Portfolio showcases my learning journey throughout the Mobile Application Development course. Through labs and projects, I developed practical skills in Android development, UI/UX design, database management, APIs, cloud integration and software engineering practices.
+        </p>
+
+        <br>
+
+        <h3>Learning Goals</h3>
+        <ul>
+            <li>Develop Android applications professionally.</li>
+            <li>Understand modern mobile development technologies.</li>
+            <li>Build real-world solutions that support sustainability.</li>
+        </ul>
+
+        <br>
+
+        <h3>Chosen SDG</h3>
+        <p>
+            SDG 12: Responsible Consumption and Production.
+            EcoEarn promotes recycling and environmental awareness through a reward-based system.
+        </p>
+    </div>
+</section>
+
+<!-- LABS -->
+<section id="labs">
+    <h2 class="section-title">Lab Submissions</h2>
+
+    <!-- LAB 1 -->
+    <div class="card">
+        <h3>Lab 1 – User Interface Design</h3>
+
+        <div class="gallery">
+            <img src="images/lab1-1.png">
+            <img src="images/lab1-2.png">
+        </div>
+
+        <a href="https://youtu.be/Z7IRdIK3rtY" class="btn">YouTube Demo</a>
+
+        <p><br>
+        Reflection: Learned how to create Android layouts and organize UI components effectively.
+        </p>
+    </div>
+
+    <!-- LAB 2 -->
+    <div class="card">
+        <h3>Lab 2 – Interaction</h3>
+
+        <div class="gallery">
+            <img src="images/lab2-1.png">
+            <img src="images/lab2-2.png">
+        </div>
+
+        <a href="https://youtu.be/cuqRUzgV5ro" class="btn">YouTube Demo</a>
+
+        <p><br>
+        Reflection: Learned event handling and user interactions in Android applications.
+        </p>
+    </div>
+
+    <!-- LAB 3 -->
+    <div class="card">
+        <h3>Lab 3 – Material Design</h3>
+
+        <div class="gallery">
+            <img src="images/lab3-1.png">
+            <img src="images/lab3-2.png">
+        </div>
+
+        <a href="https://youtu.be/0b_gQ39nLM4" class="btn">YouTube Demo</a>
+
+        <p><br>
+        Reflection: Applied Material Design principles to improve UI consistency and user experience.
+        </p>
+    </div>
+
+    <!-- LAB 4 -->
+    <div class="card">
+        <h3>Lab 4 – Navigation</h3>
+
+        <div class="gallery">
+            <img src="images/lab4-1.png">
+            <img src="images/lab4-2.png">
+        </div>
+
+        <a href="https://youtu.be/_I4VnSlegJ0" class="btn">YouTube Demo</a>
+
+        <p><br>
+        Reflection: Implemented navigation between multiple screens using Android Navigation Components.
+        </p>
+    </div>
+
+    <!-- LAB 5 -->
+    <div class="card">
+        <h3>Lab 5 – Room Database</h3>
+
+        <div class="gallery">
+            <img src="images/lab5-1.png">
+            <img src="images/lab5-2.png">
+        </div>
+
+        <a href="https://youtu.be/zFep8EzKeSI" class="btn">YouTube Demo</a>
+
+        <p><br>
+        Reflection: Learned local data storage and database management using Room.
+        </p>
+    </div>
+</section>
+
+<!-- PROJECT 1 -->
+<section id="project1">
+    <h2 class="section-title">Project 1 - EcoEarn</h2>
+
+    <div class="card">
+        <h3>Problem Statement</h3>
+
+        <p>
+           Poor waste management and low recycling rates  are caused by lack of recycling information and incentives to motivate people to do so.
+
+            My solution is EcoEarn, a points-based recycling app where users earn points for recycling or donating items, then exchange them for rewards and cash out.
+        </p>
+
+        <br>
+
+        <h3>GitHub Repository</h3>
+        <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Project1" class="btn">GitHub</a>
+
+        <h3 style="margin-top:20px;">YouTube VSR</h3>
+        <a href="https://youtu.be/LQ0bk_Xpqoo" class="btn">Watch VSR</a>
+
+        <br><br>
+
+        <h3>Lessons Learned</h3>
+
+        <p>
+            Improved understanding of Android architecture, UI navigation and software development practices.
+        </p>
+    </div>
+</section>
+
+<!-- PROJECT 2 -->
+<section id="project2">
+    <h2 class="section-title">Project 2 - EcoEarn Enhanced</h2>
+
+    <div class="card">
+        <h3>Problem Statement</h3>
+
+        <p>
+            To provide a more complete recycling ecosystem through database management, cloud integration, sensors and APIs.
+        </p>
+
+        <br>
+
+        <h3>Features</h3>
+
+        <ul>
+            <li>Room Database</li>
+            <li>API Integration</li>
+            <li>Sensor Integration</li>
+            <li>Cloud Services</li>
+            <li>Multiple Screens</li>
+        </ul>
+
+        <br>
+
+        <a href="#" class="btn">GitHub Repository</a>
+        <a href="#" class="btn">YouTube VSR</a>
+
+        <br><br>
+
+        <h3>Lessons Learned</h3>
+
+        <p>
+            Developed skills in backend integration, cloud services and data persistence for mobile applications.
+        </p>
+    </div>
+</section>
+
+<!-- REFLECTION -->
+<section id="reflection">
+    <h2 class="section-title">Reflection & Learning Journey</h2>
+
+    <div class="card">
+        <p>
+            My journey began with basic UI development in Lab 1 and progressed to building a complete Android application through Project 2. Throughout the semester, I gained confidence in designing interfaces, managing databases, integrating APIs and developing sustainable technology solutions. EcoEarn demonstrates how technology can support SDG 12 by encouraging responsible consumption and recycling behaviour.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title">Skills & Tech Stack</h2>
+
+    <div class="card">
+        <div class="skills">
+            <span class="skill">Kotlin</span>
+            <span class="skill">Android Studio</span>
+            <span class="skill">XML</span>
+            <span class="skill">Material Design</span>
+            <span class="skill">Navigation Component</span>
+            <span class="skill">Room Database</span>
+            <span class="skill">REST API</span>
+            <span class="skill">Firebase</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">Git</span>
+        </div>
+    </div>
+</section>
+
+<!-- REFERENCES -->
+<section>
+    <h2 class="section-title">Resources & References</h2>
+
+    <div class="card">
+        <ul>
+            <li>Android Developers Documentation</li>
+            <li>Material Design Guidelines</li>
+            <li>Firebase Documentation</li>
+            <li>Retrofit Documentation</li>
+            <li>ChatGPT (AI Assistance)</li>
+        </ul>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    © 2026 EcoEarn e-Portfolio | Mobile Application Development
+</footer>
+
+</body>
+</html>
+```
