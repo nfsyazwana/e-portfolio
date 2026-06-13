@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>EcoEarn · Nurul Fatin Syazwana | Mobile Dev Portfolio</title>
+
+    <!-- Google Fonts + modern system font stack -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #ececec;
+            line-height: 1.55;
+        }
+
+        /* custom scroll */
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #181818;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b27a4a;
+            border-radius: 10px;
+        }
+
+        /* premium header */
+        header {
+            background: radial-gradient(ellipse at 80% 30%, #1e2a1a, #070707);
+            text-align: center;
+            padding: 80px 24px 90px;
+            border-bottom: 1px solid #3f2c1e;
+            position: relative;
+            isolation: isolate;
+        }
+        header::before {
+            content: "♻️";
+            font-size: 200px;
+            opacity: 0.045;
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            pointer-events: none;
+            font-weight: 400;
+        }
+        header h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(130deg, #ecd9b4, #c69266);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.02em;
+            margin-bottom: 18px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(185, 123, 74, 0.2);
+            backdrop-filter: blur(4px);
+            padding: 6px 16px;
+            border-radius: 60px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #efcfaa;
+            margin-bottom: 16px;
+            border: 1px solid #7c5a3e;
+        }
+        header p {
+            font-size: 1.2rem;
+            max-width: 680px;
+            margin: 0 auto;
+            color: #cfcfcf;
+        }
+
+        /* sticky nav – sleek */
+        nav {
+            background: rgba(12, 12, 12, 0.92);
+            backdrop-filter: blur(16px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 14px 24px;
+            text-align: center;
+            border-bottom: 1px solid #2f2a24;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 28px;
+        }
+        nav a {
+            color: #dcb185;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: 0.2s;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            letter-spacing: -0.2px;
+        }
+        nav a i {
+            margin-right: 6px;
+            font-size: 0.85rem;
+        }
+        nav a:hover {
+            color: #fbe9cf;
+            border-bottom-color: #c28b5c;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 65px 0;
+            border-bottom: 1px solid #1f1f1f;
+        }
+        .section-title {
+            font-size: 2.1rem;
+            font-weight: 600;
+            color: #f3dcb2;
+            margin-bottom: 36px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            border-left: 5px solid #ca8f60;
+            padding-left: 24px;
+        }
+        .section-title i {
+            font-size: 1.8rem;
+            color: #ca8f60;
+        }
+
+        /* card premium */
+        .card {
+            background: #111111;
+            border-radius: 32px;
+            padding: 32px 36px;
+            margin-bottom: 32px;
+            border: 1px solid #28221c;
+            transition: all 0.25s ease;
+            box-shadow: 0 18px 30px -12px rgba(0, 0, 0, 0.5);
+        }
+        .card:hover {
+            border-color: #5f4233;
+            background: #131313;
+        }
+        .card h3 {
+            font-size: 1.65rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            color: #eccfaa;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .card h3 i {
+            font-size: 1.5rem;
+            color: #c28558;
+        }
+        hr {
+            margin: 22px 0;
+            border-color: #2b241f;
+        }
+
+        /* video embed wrapper - crisp */
+        .video-wrapper {
+            margin: 28px 0 20px;
+            border-radius: 24px;
+            overflow: hidden;
+            background: #000;
+            box-shadow: 0 12px 28px -10px black;
+            aspect-ratio: 16 / 9;
+        }
+        .video-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        .demo-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin: 20px 0 10px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #2c3a2a;
+            padding: 10px 26px;
+            border-radius: 44px;
+            color: #f7f2ea;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: #7a563e;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+        .btn-primary:hover {
+            background: #a2714b;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #7a563e;
+        }
+        .btn-outline:hover {
+            background: #2d241d;
+            border-color: #b07a4e;
+            color: white;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .skill {
+            background: #221e1a;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #ecd1ae;
+            border: 1px solid #56402f;
+            transition: 0.1s;
+        }
+        .skill i {
+            margin-right: 6px;
+        }
+        .skill:hover {
+            background: #5f4232;
+            color: white;
+            border-color: #b27a4a;
+        }
+
+        ul {
+            padding-left: 1.3rem;
+            margin: 14px 0;
+        }
+        li {
+            margin: 8px 0;
+            color: #dbd2c6;
+        }
+
+        footer {
+            background: #050505;
+            text-align: center;
+            padding: 40px 24px;
+            color: #a48e74;
+            font-size: 0.85rem;
+            border-top: 1px solid #26211c;
+        }
+
+        @media (max-width: 780px) {
+            .card {
+                padding: 22px;
+            }
+            header h1 {
+                font-size: 2.6rem;
+            }
+            .section-title {
+                font-size: 1.7rem;
+                padding-left: 18px;
+            }
+            nav {
+                gap: 12px 18px;
+            }
+            .container {
+                width: 94%;
+            }
+        }
+        .text-muted {
+            color: #a7a08b;
+        }
+        .inline-icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="badge"><i class="fas fa-recycle"></i> SDG 12 · Responsible Consumption</div>
+    <h1>EcoEarn</h1>
+    <p>Mobile Application Development e-Portfolio</p>
+    <p style="margin-top: 16px; font-size: 0.95rem;"><i class="fas fa-user-check"></i> Nurul Fatin Syazwana binti Mohd Sepri | A212236</p>
+</header>
+
+<nav>
+    <a href="#profile"><i class="fas fa-user-astronaut"></i> Profile</a>
+    <a href="#labs"><i class="fas fa-laptop-code"></i> Labs</a>
+    <a href="#project1"><i class="fas fa-seedling"></i> Project 1</a>
+    <a href="#project2"><i class="fas fa-cloud-upload-alt"></i> Project 2</a>
+    <a href="#reflection"><i class="fas fa-chalkboard-user"></i> Reflection</a>
+    <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
+</nav>
+
+<div class="container">
+
+    <!-- ========== PROFILE SECTION ========== -->
+    <section id="profile">
+        <h2 class="section-title"><i class="fas fa-id-card"></i> Student Profile</h2>
+        <div class="card">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;">
+                <div>
+                    <p><i class="fas fa-user-graduate inline-icon"></i> <strong>Name:</strong> Nurul Fatin Syazwana binti Mohd Sepri</p>
+                    <p><i class="fas fa-qrcode inline-icon"></i> <strong>Matric No:</strong> A212236</p>
+                    <p><i class="fas fa-mobile-alt inline-icon"></i> <strong>Course:</strong> Mobile Application Development</p>
+                    <p><i class="fas fa-chalkboard inline-icon"></i> <strong>Supervisor:</strong> Dr. Nazatul Aini</p>
+                </div>
+                <div><i class="fas fa-tree" style="font-size: 48px; opacity: 0.6; color:#c69160;"></i></div>
+            </div>
+            <hr>
+            <h3><i class="fas fa-compass"></i> Introduction</h3>
+            <p>This e-Portfolio reflects my practical and theoretical journey through Mobile Application Development. I've progressed from foundational UI design to advanced Android components: Room DB, REST APIs, Firebase, sensors, and cloud integration. EcoEarn, my flagship project, tackles waste management by rewarding users for responsible recycling behaviours — directly supporting SDG 12.</p>
+            
+            <h3 style="margin-top: 32px;"><i class="fas fa-chart-line"></i> Learning Goals</h3>
+            <ul>
+                <li><i class="fas fa-check-circle" style="color:#c28558;"></i> Build production-level Android apps with clean architecture (MVVM).</li>
+                <li><i class="fas fa-check-circle" style="color:#c28558;"></i> Integrate local databases, cloud storage, and external APIs seamlessly.</li>
+                <li><i class="fas fa-check-circle" style="color:#c28558;"></i> Design tech-for-good solutions that promote sustainability and real-world impact.</li>
+            </ul>
+            
+            <h3><i class="fas fa-globe-asia"></i> Chosen SDG</h3>
+            <p><strong>SDG 12: Responsible Consumption and Production.</strong> EcoEarn reduces waste by incentivising recycling activities. Users collect points by disposing recyclables and redeem rewards, creating a circular engagement model that drives environmental awareness.</p>
+        </div>
+    </section>
+
+    <!-- ========== LABS : all images removed, embedded YouTube videos ========== -->
+    <section id="labs">
+        <h2 class="section-title"><i class="fab fa-android"></i> Lab Submissions</h2>
+        
+        <!-- Lab 1 -->
+        <div class="card">
+            <h3><i class="fas fa-palette"></i> Lab 1 – User Interface Design</h3>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/Z7IRdIK3rtY" title="Lab 1 - UI Design demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p><i class="fas fa-microphone-alt inline-icon"></i> <strong>Reflection:</strong> Learned to build adaptive layouts using ConstraintLayout and LinearLayout. Gained deep understanding of view hierarchies, themes, and responsive design for different screen densities.</p>
+        </div>
+        
+        <!-- Lab 2 -->
+        <div class="card">
+            <h3><i class="fas fa-hand-peace"></i> Lab 2 – Interaction & Events</h3>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/cuqRUzgV5ro" title="Lab 2 - Event Handling" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p><strong>Reflection:</strong> Implemented click handlers, toasts, intents, and dynamic UI updates. Understood the Activity lifecycle and how user input drives app behaviour.</p>
+        </div>
+        
+        <!-- Lab 3 -->
+        <div class="card">
+            <h3><i class="fas fa-fill-drip"></i> Lab 3 – Material Design</h3>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/0b_gQ39nLM4" title="Material Design principles" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p><strong>Reflection:</strong> Applied Material Design components: cards, floating buttons, typography, and elevation. Enhanced visual consistency and user engagement.</p>
+        </div>
+        
+        <!-- Lab 4 -->
+        <div class="card">
+            <h3><i class="fas fa-directions"></i> Lab 4 – Navigation Component</h3>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/_I4VnSlegJ0" title="Navigation Component demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p><strong>Reflection:</strong> Mastered SafeArgs and NavGraph to create type-safe navigation between fragments. Implemented bottom navigation and deep linking patterns.</p>
+        </div>
+        
+        <!-- Lab 5 -->
+        <div class="card">
+            <h3><i class="fas fa-database"></i> Lab 5 – Room Database</h3>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/zFep8EzKeSI" title="Room DB with LiveData" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p><strong>Reflection:</strong> Integrated Room persistence, wrote DAOs and entities, and observed data with LiveData. Learned local data caching strategies for offline-first apps.</p>
+        </div>
+    </section>
+
+    <!-- ========== PROJECT 1 ========== -->
+    <section id="project1">
+        <h2 class="section-title"><i class="fas fa-seedling"></i> Project 1 – EcoEarn (MVP)</h2>
+        <div class="card">
+            <h3><i class="fas fa-bullhorn"></i> Problem Statement & Solution</h3>
+            <p>Communities lack accessible incentives to recycle — EcoEarn solves this by a points-based system: users earn credits for verified recycling actions, then exchange them for rewards (coupons, eco-products). This increases recycling rates and fosters responsible production habits.</p>
+            <div class="demo-links">
+                <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Project1" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
+                <a href="https://youtu.be/LQ0bk_Xpqoo" class="btn btn-outline" target="_blank"><i class="fab fa-youtube"></i> VSR Demo</a>
+            </div>
+            <!-- embedded VSR -->
+            <div class="video-wrapper" style="margin-top: 12px;">
+                <iframe src="https://www.youtube.com/embed/LQ0bk_Xpqoo" title="Project 1 full demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3 style="margin-top: 30px;"><i class="fas fa-graduation-cap"></i> Key Takeaways</h3>
+            <p>Designed the complete architecture: UI flows, shared preferences for session, and recycler view adapters. Understood the importance of user-centered design and basic data persistence. Strengthened my Git collaboration and debugging discipline.</p>
+        </div>
+    </section>
+
+    <!-- ========== PROJECT 2 - enhanced with cloud & sensors ========== -->
+    <section id="project2">
+        <h2 class="section-title"><i class="fas fa-cloud-sun"></i> Project 2 – EcoEarn Enhanced</h2>
+        <div class="card">
+            <h3><i class="fas fa-rocket"></i> Advanced Ecosystem</h3>
+            <p>EcoEarn v2 transforms into a feature-rich app with real-time cloud sync, sensor-based activity tracking, and external recycling center APIs to empower users with actionable data.</p>
+            <ul>
+                <li><i class="fas fa-database"></i> <strong>Room Database</strong> – offline storage for transactions and user points</li>
+                <li><i class="fas fa-cloud-upload-alt"></i> <strong>Firebase Auth & Firestore</strong> – multi-device sync & secure login</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>REST API (Retrofit)</strong> – fetch nearby recycling/drop-off points</li>
+                <li><i class="fas fa-microchip"></i> <strong>Sensor Integration</strong> – step counter / accelerometer to earn “green points”</li>
+                <li><i class="fas fa-chart-simple"></i> <strong>MVVM + LiveData</strong> – maintainable and testable architecture</li>
+            </ul>
+            <div class="demo-links">
+                <a href="#" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> GitHub Repo (Private)</a>
+                <a href="#" class="btn btn-outline" target="_blank"><i class="fab fa-youtube"></i> VSR (Coming Soon)</a>
+            </div>
+            <div class="video-wrapper" style="background: #101010; display: flex; flex-direction: column; justify-content: center; align-items: center; color:#be9a73; gap: 12px;">
+                <i class="fas fa-sync-alt" style="font-size: 40px; opacity: 0.8;"></i>
+                <span style="font-weight: 500;">Final demonstration video — showcasing API, Firebase & sensors</span>
+                <span style="font-size: 0.85rem;">Will be published upon submission completion.</span>
+            </div>
+            <h3><i class="fas fa-medal"></i> Lessons Learned</h3>
+            <p>Integrated backend services with mobile clients; handled authentication tokens, asynchronous operations, and cloud data synchronization. I mastered the repository pattern and improved error handling for real-world reliability. EcoEarn evolved into a professional-grade application prototype.</p>
+        </div>
+    </section>
+
+    <!-- ========== REFLECTION SECTION ========== -->
+    <section id="reflection">
+        <h2 class="section-title"><i class="fas fa-book-open"></i> Reflection & Learning Journey</h2>
+        <div class="card">
+            <p><i class="fas fa-quote-left" style="font-size: 1.6rem; vertical-align: middle; color: #c28558; margin-right: 12px;"></i> 
+            The journey from Lab 1 to Project 2 has been transformative. I started with static XML designs and now confidently orchestrate databases, network calls, and cloud services. EcoEarn is not just code — it's a mission-driven application that illustrates how technology can reshape consumption habits. Debugging concurrency issues and designing offline capabilities were challenging but deepened my understanding of Android internals. Each lab built a solid foundation, and the final project gave me the freedom to innovate while solving a real environmental issue. I'm proud to have built an app that aligns with SDG 12, blending technical excellence with social impact.
+            </p>
+            <br>
+            <p><strong>Future improvements:</strong> Add machine learning for waste classification, improve reward marketplace, and publish on Google Play. Mobile development has empowered me to become a solution-oriented engineer.</p>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS & TECH STACK ========== -->
+    <section id="skills">
+        <h2 class="section-title"><i class="fas fa-code-branch"></i> Skills & Tech Stack</h2>
+        <div class="card">
+            <div class="skills">
+                <span class="skill"><i class="fab fa-android"></i> Kotlin</span>
+                <span class="skill"><i class="fas fa-mobile-alt"></i> Android SDK</span>
+                <span class="skill"><i class="fas fa-paintbrush"></i> XML / Jetpack</span>
+                <span class="skill"><i class="fas fa-database"></i> Room DB</span>
+                <span class="skill"><i class="fas fa-fire"></i> Firebase (Auth/Firestore)</span>
+                <span class="skill"><i class="fas fa-cloud-upload-alt"></i> Retrofit</span>
+                <span class="skill"><i class="fas fa-chart-line"></i> MVVM / LiveData</span>
+                <span class="skill"><i class="fas fa-code"></i> Coroutines</span>
+                <span class="skill"><i class="fab fa-github-alt"></i> Git & GitHub</span>
+                <span class="skill"><i class="fas fa-tachometer-alt"></i> Material Design 3</span>
+                <span class="skill"><i class="fas fa-microchip"></i> Sensor APIs</span>
+                <span class="skill"><i class="fas fa-map-marked-alt"></i> Google Maps API</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== RESOURCES & REFERENCES ========== -->
+    <section>
+        <h2 class="section-title"><i class="fas fa-scroll"></i> References & Acknowledgments</h2>
+        <div class="card">
+            <ul style="list-style: none; padding-left: 0;">
+                <li><i class="fas fa-external-link-alt" style="color:#c28558; margin-right: 12px;"></i> Android Developers Official Docs: developer.android.com</li>
+                <li><i class="fas fa-external-link-alt" style="color:#c28558; margin-right: 12px;"></i> Material Design Guidelines (Material 3)</li>
+                <li><i class="fas fa-external-link-alt" style="color:#c28558; margin-right: 12px;"></i> Firebase Documentation — Realtime & Firestore</li>
+                <li><i class="fas fa-external-link-alt" style="color:#c28558; margin-right: 12px;"></i> Retrofit 2 / Square Open Source</li>
+                <li><i class="fas fa-robot" style="color:#c28558; margin-right: 12px;"></i> AI-assisted debugging & boilerplate optimization</li>
+                <li><i class="fas fa-leaf" style="color:#c28558; margin-right: 12px;"></i> United Nations SDG 12 resources</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p><i class="fas fa-recycle"></i> EcoEarn — Driving responsible consumption through mobile innovation</p>
+    <p style="margin-top: 12px;">© 2026 Nurul Fatin Syazwana | Mobile Application Development Portfolio</p>
+    <p style="margin-top: 6px; font-size: 0.75rem; opacity: 0.7;"><i class="fas fa-video"></i> All lab demos and project VSR embedded directly from YouTube</p>
+</footer>
+
+</body>
+</html>
