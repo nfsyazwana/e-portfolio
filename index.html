@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>EcoEarn · Syazwana | Mobile Dev Portfolio</title>
+    <title>EcoEarn · Syazwana | Mobile Development Portfolio</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
@@ -20,10 +20,10 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #0a0a0f;
-            color: #ededf0;
+            background: #0c0c12;
+            color: #e8eef2;
             line-height: 1.55;
-            cursor: crosshair;
+            cursor: default;
         }
 
         /* custom cursor for interactive elements */
@@ -31,179 +31,158 @@
             cursor: pointer;
         }
 
-        a:hover, .btn:hover, nav a:hover, .lab-card:hover {
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27"><polygon points="2,2 22,13 12,16 2,22" fill="%236dac70" stroke="%23ffffff" stroke-width="1"/><circle cx="12" cy="13" r="2" fill="white"/></svg>') 12 5, auto;
-        }
-
         ::-webkit-scrollbar {
             width: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #121217;
+            background: #18181e;
         }
         ::-webkit-scrollbar-thumb {
-            background: #6dac70;
-            border-radius: 12px;
+            background: #5a7c5e;
+            border-radius: 10px;
         }
 
-        /* Header */
+        /* Header - clean professional */
         header {
-            background: radial-gradient(ellipse at 80% 20%, #0a2f1f, #010503 70%);
+            background: #0a0e0c;
             text-align: center;
-            padding: 80px 24px 100px;
-            border-bottom: 1px solid rgba(109, 172, 112, 0.5);
+            padding: 70px 24px 80px;
+            border-bottom: 1px solid #2a302c;
             position: relative;
-            overflow: hidden;
-        }
-        header::before {
-            content: "♻️🌿";
-            font-size: 280px;
-            opacity: 0.035;
-            position: absolute;
-            bottom: -60px;
-            left: -40px;
-            pointer-events: none;
         }
         .badge-sdg {
             display: inline-block;
-            background: rgba(40, 70, 48, 0.5);
-            backdrop-filter: blur(12px);
-            padding: 6px 22px;
-            border-radius: 80px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: #d6f0cf;
-            border: 1px solid #6dac70;
+            background: #1e2a22;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            color: #bcddae;
+            border: 1px solid #4a6b4e;
             margin-bottom: 28px;
         }
         .hero-name {
-            font-size: 4.8rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #FFFFFF, #CBE5C4, #86b386);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            margin-bottom: 16px;
+            font-size: 4.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
         }
         .hero-title {
-            font-size: 1.3rem;
-            font-weight: 500;
-            color: #e2f0dc;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #b8c7bc;
         }
         .hero-sub {
-            font-size: 0.9rem;
-            opacity: 0.8;
+            font-size: 0.85rem;
+            color: #8a9c8e;
             margin-top: 14px;
-            color: #bddbb5;
         }
 
         /* Navigation */
         nav {
-            background: rgba(3, 8, 10, 0.92);
-            backdrop-filter: blur(20px);
+            background: #0f1215;
             position: sticky;
             top: 0;
             z-index: 100;
-            padding: 14px 24px;
+            padding: 12px 24px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px 40px;
-            border-bottom: 1px solid rgba(109, 172, 112, 0.5);
+            gap: 20px 42px;
+            border-bottom: 1px solid #2a302c;
         }
         nav a {
-            color: #e7f3e2;
+            color: #cbdcd0;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
+            font-weight: 500;
+            font-size: 0.85rem;
             transition: 0.2s;
-            padding: 5px 0;
-            border-bottom: 2px solid transparent;
+            padding: 6px 0;
+            border-bottom: 1px solid transparent;
         }
         nav a i {
             margin-right: 8px;
+            font-size: 0.8rem;
         }
         nav a:hover {
             color: #ffffff;
-            border-bottom-color: #6dac70;
+            border-bottom-color: #6e9f71;
         }
 
         .container {
-            width: 90%;
-            max-width: 1300px;
+            width: 88%;
+            max-width: 1280px;
             margin: 0 auto;
         }
 
         section {
-            padding: 70px 0;
-            border-bottom: 1px solid #1a221c;
+            padding: 65px 0;
+            border-bottom: 1px solid #20241f;
         }
         .section-title {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #e1f3db;
-            margin-bottom: 40px;
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            border-left: 5px solid #6dac70;
-            padding-left: 24px;
-        }
-        .section-title i {
             font-size: 1.8rem;
-            color: #8bcb7e;
-        }
-
-        /* Cards */
-        .card {
-            background: #0e1411;
-            border-radius: 32px;
-            padding: 32px 36px;
-            margin-bottom: 30px;
-            border: 1px solid #2a362c;
-            transition: all 0.3s ease;
-            box-shadow: 0 20px 30px -15px rgba(0, 0, 0, 0.5);
-        }
-        .card:hover {
-            border-color: #6dac70;
-            transform: translateY(-3px);
-        }
-        .card h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #daf5d0;
+            font-weight: 600;
+            color: #e2ecd9;
+            margin-bottom: 36px;
             display: flex;
             align-items: center;
             gap: 12px;
+            border-left: 4px solid #6e9f71;
+            padding-left: 22px;
+        }
+        .section-title i {
+            font-size: 1.5rem;
+            color: #7eae82;
+        }
+
+        /* Card style - minimal, professional */
+        .card {
+            background: #111418;
+            border-radius: 24px;
+            padding: 32px 36px;
+            margin-bottom: 28px;
+            border: 1px solid #252b27;
+            transition: border 0.2s;
+        }
+        .card:hover {
+            border-color: #4a6b4e;
+        }
+        .card h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            color: #deecdc;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         /* Labs Grid */
         .labs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
             gap: 28px;
         }
         .lab-card {
-            background: #0c1210;
-            border-radius: 28px;
+            background: #111418;
+            border-radius: 24px;
             padding: 24px;
-            border: 1px solid #2a362c;
-            transition: all 0.3s ease;
+            border: 1px solid #252b27;
+            transition: border 0.2s;
         }
         .lab-card:hover {
-            border-color: #6dac70;
-            transform: translateY(-5px);
+            border-color: #6e9f71;
         }
         .lab-card h3 {
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             margin-bottom: 12px;
-            color: #cde8c4;
+            color: #e2ecd9;
         }
         .video-wrapper {
             margin: 18px 0 16px;
-            border-radius: 20px;
+            border-radius: 16px;
             overflow: hidden;
             background: #000;
             aspect-ratio: 16 / 9;
@@ -224,27 +203,26 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: #1b2a21;
+            background: #1e2822;
             padding: 8px 20px;
-            border-radius: 40px;
-            color: #f0f7ec;
+            border-radius: 36px;
+            color: #e2ecd9;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.75rem;
+            font-weight: 500;
+            font-size: 0.7rem;
             transition: 0.2s;
-            border: 1px solid #4a7250;
+            border: 1px solid #3a4f3e;
         }
         .btn-primary {
-            background: #2d5a38;
-            border-color: #6dac70;
+            background: #2d4633;
+            border-color: #5a8a5e;
         }
         .btn-primary:hover {
-            background: #437a4f;
-            transform: translateY(-2px);
+            background: #3d5e44;
         }
         .lab-card p {
             font-size: 0.85rem;
-            color: #ccdfc6;
+            color: #b8c7bc;
             margin-top: 10px;
         }
 
@@ -256,59 +234,56 @@
             margin-top: 16px;
         }
         .skill {
-            background: #121e19;
-            padding: 8px 22px;
-            border-radius: 40px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: #cef0c3;
-            border: 1px solid #4c764a;
+            background: #1a221e;
+            padding: 6px 20px;
+            border-radius: 32px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #cde2c6;
+            border: 1px solid #3a5340;
         }
         .skill i {
-            margin-right: 8px;
-            color: #8bcb7e;
-        }
-        .skill:hover {
-            background: #2f5a3c;
-            transform: scale(1.02);
+            margin-right: 6px;
+            font-size: 0.7rem;
         }
 
         hr {
             margin: 24px 0;
-            border-color: #2a3a2c;
+            border-color: #252b27;
         }
         ul {
-            padding-left: 1.3rem;
+            padding-left: 1.2rem;
         }
         li {
-            margin: 8px 0;
+            margin: 6px 0;
+            color: #cbdcd0;
         }
         footer {
-            background: #020604;
+            background: #080b09;
             text-align: center;
-            padding: 40px 24px;
-            color: #94a88e;
-            font-size: 0.8rem;
-            border-top: 1px solid #2b4230;
+            padding: 36px 24px;
+            color: #7a8e7e;
+            font-size: 0.75rem;
+            border-top: 1px solid #20241f;
         }
         .inline-icon {
             margin-right: 8px;
-            color: #8bcb7e;
+            color: #7eae82;
         }
-        .ref-quote {
-            font-size: 1rem;
-            line-height: 1.6;
+        .ref-text {
+            font-size: 0.95rem;
+            line-height: 1.65;
         }
 
         @media (max-width: 768px) {
             .hero-name {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             .card {
                 padding: 22px;
             }
             .section-title {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
             }
             .labs-grid {
                 grid-template-columns: 1fr;
@@ -322,7 +297,7 @@
     <div class="badge-sdg"><i class="fas fa-recycle"></i> SDG 12 · Responsible Consumption & Production</div>
     <div class="hero-name">Nurul Fatin Syazwana</div>
     <div class="hero-title">Mobile Application Development Portfolio</div>
-    <div class="hero-sub"><i class="fas fa-id-card"></i> A212236 · supervised by Dr. Nazatul Aini</div>
+    <div class="hero-sub">A212236 · supervised by Dr. Nazatul Aini</div>
 </header>
 
 <nav>
@@ -332,7 +307,7 @@
     <a href="#project2"><i class="fas fa-cloud-upload-alt"></i> Project 2</a>
     <a href="#reflection"><i class="fas fa-book-open"></i> Reflection</a>
     <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
-    <a href="#references"><i class="fas fa-scroll"></i> Resources</a>
+    <a href="#references"><i class="fas fa-scroll"></i> References</a>
 </nav>
 
 <div class="container">
@@ -347,81 +322,81 @@
             <p><i class="fas fa-chalkboard inline-icon"></i> <strong>Instructor:</strong> Dr. Nazatul Aini</p>
             <hr>
             <h3><i class="fas fa-compass"></i> Introduction & Learning Goals</h3>
-            <p>This e-Portfolio showcases my journey mastering Android development — from UI design to advanced integrations (Room DB, REST APIs, Firebase, sensors). My goal is to build production-grade mobile solutions that drive positive environmental impact through technology.</p>
+            <p>This e-Portfolio documents my progress throughout the Mobile Application Development course. I have focused on building practical competencies in Android development, from foundational UI design to database integration, API consumption, and sensor-based features. My objective is to develop production-ready applications that address real-world needs.</p>
             <ul style="margin-top: 16px;">
-                <li><i class="fas fa-check-circle" style="color:#6dac70;"></i> Develop full-stack Android apps with modern architecture (MVVM).</li>
-                <li><i class="fas fa-check-circle" style="color:#6dac70;"></i> Integrate local databases, cloud services, and external APIs seamlessly.</li>
-                <li><i class="fas fa-check-circle" style="color:#6dac70;"></i> Create sustainable tech solutions supporting SDG 12.</li>
+                <li><i class="fas fa-check-circle" style="color:#6e9f71;"></i> Master Android architecture patterns (MVVM, Repository).</li>
+                <li><i class="fas fa-check-circle" style="color:#6e9f71;"></i> Integrate local storage, cloud services, and external APIs.</li>
+                <li><i class="fas fa-check-circle" style="color:#6e9f71;"></i> Build sustainable technology solutions aligned with SDG 12.</li>
             </ul>
             <hr>
             <h3><i class="fas fa-globe-asia"></i> Chosen SDG</h3>
-            <p><strong>SDG 12 — Responsible Consumption and Production:</strong> "EcoEarn empowers communities to recycle with confidence by using AI guidance and cash incentives, reducing waste and promoting circular economy habits."</p>
+            <p><strong>SDG 12 — Responsible Consumption and Production:</strong> "EcoEarn provides AI-guided waste segregation and cash incentives to increase recycling participation and reduce landfill waste."</p>
         </div>
     </section>
 
-    <!-- ================= 2. LAB SUBMISSIONS (No screenshots, only YouTube + reflection) ================= -->
+    <!-- ================= 2. LAB SUBMISSIONS ================= -->
     <section id="labs">
         <h2 class="section-title"><i class="fab fa-android"></i> Lab Submissions</h2>
         <div class="labs-grid">
             <!-- Lab 1 -->
             <div class="lab-card">
-                <h3><i class="fas fa-paint-brush"></i> Lab 1 – User Interface Design</h3>
+                <h3>Lab 1 – User Interface Design</h3>
                 <div class="video-wrapper">
                     <iframe src="https://www.youtube.com/embed/Z7IRdIK3rtY" title="Lab 1 UI Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="button-group">
-                    <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Lab1" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
-                    <a href="https://youtu.be/Z7IRdIK3rtY" class="btn" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Lab1" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                    <a href="https://youtu.be/Z7IRdIK3rtY" class="btn" target="_blank"><i class="fab fa-youtube"></i> Demo</a>
                 </div>
-                <p><i class="fas fa-microphone-alt inline-icon"></i> <strong>Reflection:</strong> Learned to create responsive layouts using ConstraintLayout, LinearLayout, and ViewBinding. Mastered UI components, themes, and adaptive design for multiple screen sizes.</p>
+                <p><strong>Reflection:</strong> Developed proficiency in ConstraintLayout, LinearLayout, and responsive design principles. Implemented ViewBinding and adaptive themes for consistent multi-screen rendering.</p>
             </div>
             <!-- Lab 2 -->
             <div class="lab-card">
-                <h3><i class="fas fa-hand-pointer"></i> Lab 2 – Interaction & Events</h3>
+                <h3>Lab 2 – Interaction & Events</h3>
                 <div class="video-wrapper">
                     <iframe src="https://www.youtube.com/embed/cuqRUzgV5ro" title="Lab 2 Interactions" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="button-group">
-                    <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Lab2" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
-                    <a href="https://youtu.be/cuqRUzgV5ro" class="btn" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Lab2" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                    <a href="https://youtu.be/cuqRUzgV5ro" class="btn" target="_blank"><i class="fab fa-youtube"></i> Demo</a>
                 </div>
-                <p><strong>Reflection:</strong> Implemented click listeners, custom dialogs, intents, and dynamic UI updates. Understood Activity lifecycle and event-driven programming for engaging user experiences.</p>
+                <p><strong>Reflection:</strong> Implemented event listeners, custom dialogs, explicit intents, and dynamic UI updates. Gained understanding of Activity lifecycle and user-triggered state changes.</p>
             </div>
             <!-- Lab 3 -->
             <div class="lab-card">
-                <h3><i class="fas fa-palette"></i> Lab 3 – Material Design</h3>
+                <h3>Lab 3 – Material Design</h3>
                 <div class="video-wrapper">
                     <iframe src="https://www.youtube.com/embed/0b_gQ39nLM4" title="Material Design" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="button-group">
-                    <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Lab3" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
-                    <a href="https://youtu.be/0b_gQ39nLM4" class="btn" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Lab3" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                    <a href="https://youtu.be/0b_gQ39nLM4" class="btn" target="_blank"><i class="fab fa-youtube"></i> Demo</a>
                 </div>
-                <p><strong>Reflection:</strong> Applied Material Design 3 components: cards, floating action buttons, typography, elevation, and motion. Enhanced visual consistency and user engagement.</p>
+                <p><strong>Reflection:</strong> Applied Material Design 3 components including Cards, FAB, typography scales, and elevation. Ensured visual consistency and accessibility compliance.</p>
             </div>
             <!-- Lab 4 -->
             <div class="lab-card">
-                <h3><i class="fas fa-directions"></i> Lab 4 – Navigation Component</h3>
+                <h3>Lab 4 – Navigation Component</h3>
                 <div class="video-wrapper">
                     <iframe src="https://www.youtube.com/embed/_I4VnSlegJ0" title="Navigation Component" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="button-group">
-                    <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Lab4" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
-                    <a href="https://youtu.be/_I4VnSlegJ0" class="btn" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Lab4" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                    <a href="https://youtu.be/_I4VnSlegJ0" class="btn" target="_blank"><i class="fab fa-youtube"></i> Demo</a>
                 </div>
-                <p><strong>Reflection:</strong> Used SafeArgs and NavGraph for type-safe navigation. Implemented bottom navigation menu, fragment transactions, and conditional deep linking.</p>
+                <p><strong>Reflection:</strong> Implemented SafeArgs for type-safe navigation, configured NavGraph, and built bottom navigation menus. Mastered fragment transactions and conditional routing.</p>
             </div>
             <!-- Lab 5 -->
             <div class="lab-card">
-                <h3><i class="fas fa-database"></i> Lab 5 – Room Database</h3>
+                <h3>Lab 5 – Room Database</h3>
                 <div class="video-wrapper">
                     <iframe src="https://www.youtube.com/embed/zFep8EzKeSI" title="Room Database" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="button-group">
-                    <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Lab5" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
-                    <a href="https://youtu.be/zFep8EzKeSI" class="btn" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Lab5" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                    <a href="https://youtu.be/zFep8EzKeSI" class="btn" target="_blank"><i class="fab fa-youtube"></i> Demo</a>
                 </div>
-                <p><strong>Reflection:</strong> Integrated Room persistence library, wrote DAOs and entities, observed data with LiveData, and implemented coroutines for async operations.</p>
+                <p><strong>Reflection:</strong> Integrated Room persistence library, created DAOs and entities, implemented LiveData observers, and used coroutines for asynchronous database operations.</p>
             </div>
         </div>
     </section>
@@ -431,15 +406,15 @@
     <section id="project1">
         <h2 class="section-title"><i class="fas fa-seedling"></i> Project 1 – EcoEarn (MVP)</h2>
         <div class="card">
-            <h3><i class="fas fa-exclamation-triangle"></i> Problem Statement</h3>
-            <p>Low recycling participation due to lack of guidance and incentives. People want to recycle but don't know how to separate waste correctly, and there's no reward for their effort.</p>
-            <h3 style="margin-top: 20px;"><i class="fas fa-mobile-alt"></i> Working Features</h3>
+            <h3>Problem Statement</h3>
+            <p>Low recycling participation due to lack of waste segregation guidance and financial incentives. Households are often confused about proper disposal methods, and existing recycling programs offer no tangible rewards for effort.</p>
+            <h3>Working Features</h3>
             <ul>
-                <li>User registration & login (SharedPreferences)</li>
-                <li>Item scanner with category selection (Plastic/Glass/Paper/Metal)</li>
-                <li>Points ledger and reward catalog</li>
-                <li>Form submission + photo proof upload</li>
-                <li>Cash-out to e-wallet</li>
+                <li>User authentication via SharedPreferences</li>
+                <li>Item category selection (Plastic, Glass, Paper, Metal, E-waste)</li>
+                <li>Points accumulation and reward catalog</li>
+                <li>Form submission with photo proof upload</li>
+                <li>Cash redemption to e-wallet</li>
             </ul>
             <div class="button-group" style="margin: 20px 0 16px;">
                 <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Project1" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
@@ -448,25 +423,17 @@
             <div class="video-wrapper">
                 <iframe src="https://www.youtube.com/embed/LQ0bk_Xpqoo" title="Project 1 VSR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <h3 style="margin-top: 24px;"><i class="fas fa-graduation-cap"></i> Lessons Learned</h3>
-            <p>Built complete user flow from scratch. Strengthened understanding of Android architecture, data persistence, and user-centered design. Learned to debug real-world issues and implement reward logic efficiently.</p>
+            <h3>Lessons Learned</h3>
+            <p>Developed a complete user flow from registration to reward redemption. Strengthened understanding of Android lifecycle management, data persistence, and user-centered design. Learned to debug real-world integration issues and implement business logic for point-based systems.</p>
         </div>
     </section>
 
-    <!-- Project 2 -->
+    <!-- Project 2 - Lessons Learned Only (no feature list) -->
     <section id="project2">
-        <h2 class="section-title"><i class="fas fa-cloud-sun"></i> Project 2 – EcoEarn Enhanced</h2>
+        <h2 class="section-title"><i class="fas fa-cloud-upload-alt"></i> Project 2 – EcoEarn Enhanced</h2>
         <div class="card">
-            <h3><i class="fas fa-chart-line"></i> Problem Statement & Advanced Features</h3>
-            <p>Extending EcoEarn into a production-grade platform with real-time sync, sensor gamification, and API integration for nearby recycling centers.</p>
-            <ul>
-                <li><i class="fas fa-database"></i> <strong>Room Database</strong> – offline transactions & points history</li>
-                <li><i class="fas fa-cloud-upload-alt"></i> <strong>Firebase Auth & Firestore</strong> – cloud sync & secure login</li>
-                <li><i class="fas fa-plug"></i> <strong>REST API (Retrofit)</strong> – live recycling center locator</li>
-                <li><i class="fas fa-microchip"></i> <strong>Sensor Integration</strong> – step counter to earn green points</li>
-                <li><i class="fas fa-chart-simple"></i> <strong>MVVM + Coroutines + Hilt</strong> – clean architecture</li>
-                <li><i class="fas fa-map-marked-alt"></i> <strong>Google Maps SDK</strong> – nearest eco centers</li>
-            </ul>
+            <h3>Problem Statement</h3>
+            <p>Building upon the MVP, Project 2 required extending EcoEarn into a fully-featured platform with real-time synchronization, sensor-based gamification, and external API integration to provide users with nearby recycling center information.</p>
             <div class="button-group" style="margin: 20px 0 16px;">
                 <a href="https://github.com/nfsyazwana/A212236_Syazwana_Nazatul_Project2" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
                 <a href="https://youtu.be/glfZzNvhC9w" class="btn" target="_blank"><i class="fab fa-youtube"></i> YouTube VSR</a>
@@ -474,8 +441,8 @@
             <div class="video-wrapper">
                 <iframe src="https://www.youtube.com/embed/glfZzNvhC9w" title="Project 2 Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <h3 style="margin-top: 24px;"><i class="fas fa-medal"></i> Lessons Learned</h3>
-            <p>Mastered backend integration with Firebase, handled authentication tokens, managed asynchronous data streams, and created a scalable reward engine. Implemented clean architecture with repository pattern and unit tests.</p>
+            <h3>Lessons Learned</h3>
+            <p>Implementing a production-grade Android application required mastering several advanced concepts. I integrated Firebase Authentication and Firestore for secure cloud synchronization, ensuring user data persistence across devices. Room Database was used for offline-first capabilities, allowing seamless operation without network connectivity. Retrofit enabled REST API consumption to fetch live recycling center data, while Google Maps SDK provided visual location context. Sensor integration (step counter) introduced gamification elements that increased user engagement. The MVVM architecture pattern combined with Coroutines and Hilt dependency injection resulted in a maintainable, testable codebase. Key challenges included managing state across asynchronous operations, handling API rate limits, and optimizing database queries for performance. This project solidified my ability to deliver complex, multi-feature Android applications independently.</p>
         </div>
     </section>
 
@@ -483,13 +450,9 @@
     <section id="reflection">
         <h2 class="section-title"><i class="fas fa-book-open"></i> Reflection & Learning Journey</h2>
         <div class="card">
-            <p class="ref-quote"><i class="fas fa-quote-left" style="font-size: 2rem; color: #6dac70; margin-right: 15px; vertical-align: middle;"></i> 
-            Starting from basic UI layouts in Lab 1 to building a fully integrated, cloud-connected, sensor-driven application in Project 2 has been transformative. Each lab built a strong foundation — UI design, event handling, Material Design, navigation, and local persistence. Project 1 challenged me to think like a product owner, solving real user pain points (confusion about recycling + lack of rewards). Project 2 pushed me into advanced territory: Firebase sync, REST APIs, step sensors, and production-ready architecture (MVVM, Hilt, Coroutines). 
-            </p>
+            <p class="ref-text">The progression from Lab 1 to Project 2 represents a comprehensive learning arc. Initial labs established fundamentals: UI design, event handling, Material guidelines, navigation patterns, and local persistence. Project 1 challenged me to synthesize these skills into a functional application addressing a genuine user problem — confusion about recycling and lack of incentives. Project 2 elevated the complexity significantly: cloud synchronization, API integration, sensor-based features, and production-ready architecture (MVVM, Coroutines, Hilt).</p>
             <br>
-            <p><strong>Challenges overcome:</strong> Debugging Room migrations, handling API rate limits, and implementing sensor-based gamification. Each obstacle taught me resilience and deeper Android internals.</p>
-            <br>
-            <p><strong>SDG 12 Impact:</strong> EcoEarn directly addresses responsible consumption by making recycling easy (AI guidance) and rewarding (cash incentives). My work contributes to reducing landfill waste and promoting circular economy habits.</p>
+            <p class="ref-text">Significant challenges included debugging Room migration conflicts, managing asynchronous data streams, and ensuring offline functionality worked seamlessly with cloud sync. Each obstacle reinforced the importance of systematic debugging and architectural planning. SDG 12 remained the guiding framework — every feature directly supports responsible consumption by making recycling easier and financially rewarding. This portfolio demonstrates technical competency and a commitment to using mobile technology for environmental impact.</p>
         </div>
     </section>
 
@@ -500,17 +463,16 @@
             <div class="skills">
                 <span class="skill"><i class="fab fa-android"></i> Kotlin</span>
                 <span class="skill"><i class="fas fa-mobile-alt"></i> Android SDK</span>
-                <span class="skill"><i class="fas fa-paintbrush"></i> XML / Material 3</span>
-                <span class="skill"><i class="fas fa-database"></i> Room DB</span>
+                <span class="skill"><i class="fas fa-paintbrush"></i> XML / Material Design</span>
+                <span class="skill"><i class="fas fa-database"></i> Room Database</span>
                 <span class="skill"><i class="fas fa-fire"></i> Firebase Auth/Firestore</span>
-                <span class="skill"><i class="fas fa-cloud-upload-alt"></i> Retrofit/OkHttp</span>
-                <span class="skill"><i class="fas fa-chart-line"></i> MVVM + LiveData/Flow</span>
+                <span class="skill"><i class="fas fa-cloud-upload-alt"></i> Retrofit</span>
+                <span class="skill"><i class="fas fa-chart-line"></i> MVVM + LiveData</span>
                 <span class="skill"><i class="fas fa-code"></i> Coroutines</span>
-                <span class="skill"><i class="fab fa-github-alt"></i> Git/GitHub</span>
+                <span class="skill"><i class="fab fa-github-alt"></i> Git / GitHub</span>
                 <span class="skill"><i class="fas fa-microchip"></i> Sensor APIs</span>
                 <span class="skill"><i class="fas fa-map-marked-alt"></i> Google Maps SDK</span>
                 <span class="skill"><i class="fas fa-cube"></i> Hilt DI</span>
-                <span class="skill"><i class="fas fa-vial"></i> JUnit / MockK</span>
             </div>
         </div>
     </section>
@@ -520,21 +482,21 @@
         <h2 class="section-title"><i class="fas fa-scroll"></i> Resources & References</h2>
         <div class="card">
             <ul style="list-style: none; padding-left: 0;">
-                <li><i class="fas fa-external-link-alt" style="color:#6dac70; margin-right: 12px;"></i> Android Developers Official Documentation</li>
-                <li><i class="fas fa-external-link-alt" style="color:#6dac70; margin-right: 12px;"></i> Material Design 3 Guidelines</li>
-                <li><i class="fas fa-external-link-alt" style="color:#6dac70; margin-right: 12px;"></i> Firebase Documentation (Auth, Firestore)</li>
-                <li><i class="fas fa-external-link-alt" style="color:#6dac70; margin-right: 12px;"></i> Retrofit 2 + Moshi by Square</li>
-                <li><i class="fas fa-external-link-alt" style="color:#6dac70; margin-right: 12px;"></i> Google Maps SDK for Android</li>
-                <li><i class="fas fa-robot" style="color:#6dac70; margin-right: 12px;"></i> AI-assisted debugging (ChatGPT, GitHub Copilot) – used for boilerplate optimization and error resolution</li>
-                <li><i class="fas fa-leaf" style="color:#6dac70; margin-right: 12px;"></i> UN SDG 12 official resources and data</li>
+                <li><i class="fas fa-external-link-alt" style="color:#6e9f71; margin-right: 12px;"></i> Android Developers Official Documentation</li>
+                <li><i class="fas fa-external-link-alt" style="color:#6e9f71; margin-right: 12px;"></i> Material Design 3 Guidelines</li>
+                <li><i class="fas fa-external-link-alt" style="color:#6e9f71; margin-right: 12px;"></i> Firebase Documentation (Authentication, Firestore)</li>
+                <li><i class="fas fa-external-link-alt" style="color:#6e9f71; margin-right: 12px;"></i> Retrofit 2 + Moshi by Square</li>
+                <li><i class="fas fa-external-link-alt" style="color:#6e9f71; margin-right: 12px;"></i> Google Maps SDK for Android</li>
+                <li><i class="fas fa-robot" style="color:#6e9f71; margin-right: 12px;"></i> AI-assisted development (debugging, boilerplate optimization)</li>
+                <li><i class="fas fa-leaf" style="color:#6e9f71; margin-right: 12px;"></i> UN SDG 12 Official Resources</li>
             </ul>
         </div>
     </section>
 </div>
 
 <footer>
-    <p><i class="fas fa-recycle"></i> EcoEarn — Mobile Application Development Portfolio | SDG 12: Responsible Consumption</p>
-    <p style="margin-top: 12px;">© 2026 Nurul Fatin Syazwana binti Mohd Sepri (A212236) · All GitHub repositories linked</p>
+    <p>Nurul Fatin Syazwana binti Mohd Sepri (A212236) — Mobile Application Development Portfolio</p>
+    <p style="margin-top: 8px;">© 2026 · All GitHub repositories linked</p>
 </footer>
 
 </body>
