@@ -56,40 +56,6 @@ Many individuals, especially students, lack motivation to participate in recycli
 
 ---
 
-## Screenshots
-
-Add your application screenshots here.
-
-| Home Screen | Feature Screen |
-| ----------- | -------------- |
-| Screenshot  | Screenshot     |
-
----
-
-## Video Demonstration
-
-Project Video:
-
-[Insert YouTube Link Here]
-
----
-
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/ecoearn.git
-   ```
-
-2. Open the project in Android Studio.
-
-3. Sync Gradle dependencies.
-
-4. Run the application using an Android emulator or physical device.
-
----
-
 ## Learning Outcomes
 
 Through this project, I gained experience in:
